@@ -1,9 +1,21 @@
 # Pong Game
 
-A simple Pong web game with CI/CD pipeline for build, test, SonarQube analysis, Docker image build, and push.
-
+A simple Pong web game with a CI/CD pipeline for build, test, SonarQube analysis, Docker image build, and push.
 
 ![Pong Game Screenshot](assets/PingPong.JPG)
+
+## GitHub Actions CI/CD Pipeline Overview
+
+Efficient, automated steps GitLab pipeline:
+
+- Checkout code
+- Install dependencies
+- Run tests
+- SonarQube analysis (Modify) 
+- Build Docker image
+- Push Docker image to registry (Modify) 
+
+![GitHub Actions Pipeline Screenshot](assets/GitHubPipeline.JPG)
 
 ## Prerequisites
 

@@ -2,6 +2,9 @@
 
 A simple Pong web game with CI/CD pipeline for build, test, SonarQube analysis, Docker image build, and push.
 
+
+![Pong Game Screenshot](assets/PingPong.JPG)
+
 ## Prerequisites
 
 - [Node.js](https://nodejs.org/)

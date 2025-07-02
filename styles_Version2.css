@@ -1,0 +1,20 @@
+body {
+    background: #20232a;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin: 20px 0 10px 0;
+}
+
+#pong {
+    background: #111;
+    display: block;
+    margin: 0 auto;
+    border: 4px solid #444;
+    box-shadow: 0 0 20px #000;
+}

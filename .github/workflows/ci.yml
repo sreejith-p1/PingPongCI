@@ -38,6 +38,9 @@ jobs:
       #     SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}   # Add this secret if SonarQube is required
       # Uncomment the above SonarQube step and add the required secrets if code analysis is needed
 
+      - name: Set image name to lowercase
+        run: echo "IMAGE_NAME_LC=${IMAGE_NAME,,}" >> $GITHUB_ENV
+
       - name: Log in to Docker registry
         uses: docker/login-action@v3
         with:
@@ -47,8 +50,8 @@ jobs:
 
       - name: Build Docker image
         run: |
-          docker build -t ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest .
+          docker build -t ${{ env.REGISTRY }}/${{ env.IMAGE_NAME_LC }}:latest .
 
       - name: Push Docker image
         run: |
-          docker push ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest
+          docker push ${{ env.REGISTRY }}/${{ env.IMAGE_NAME_LC }}:latest

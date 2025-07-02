@@ -15,4 +15,4 @@ EXPOSE 8080
 # Simple static server using http-server
 RUN npm install -g http-server
 
-CMD ["http-server", "-p", "8080"]
+CMD ["http-server", "src", "-p", "8080"]

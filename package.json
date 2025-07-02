@@ -4,7 +4,7 @@
   "description": "A simple Pong game with CI/CD, testing, SonarQube, and Dockerization.",
   "scripts": {
     "test": "echo \"No tests specified\" && exit 0",
-    "start": "http-server -p 8080"
+    "start": "http-server src -p 8080"
   },
   "devDependencies": {
     "http-server": "^14.1.1"
